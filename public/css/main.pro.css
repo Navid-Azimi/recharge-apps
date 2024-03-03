@@ -1,0 +1,881 @@
+/* .iti__flag {background-image: url("path/to/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("path/to/flags@2x.png");}
+} */
+
+.marquee-container {
+    overflow: hidden;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee-scroll 30s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.reseller-profile {
+    text-align: -webkit-center;
+}
+.UserProfilePicture {
+    border-style: solid;
+}
+.reseller-img img {
+    width: 5rem;
+    border-radius: 10rem;
+}
+.reseller-account i {
+    font-size: 1.3rem;
+}
+
+.bi-envelope {
+    margin-left: 8px;
+}
+.reseler-profiles-endline {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+/* en user profile  */
+/* dashboard_balance  */
+.app_balaceshow_toggle {
+    margin-top: 2px;
+}
+.balance_form_check {
+    padding-top: 10px;
+}
+.mobile_button {
+    text-align: center;
+}
+.card_header_fw_bold,
+.balance_content {
+    text-align: center;
+}
+.mobile_card_header_fw_bold {
+    display: flex;
+}
+/* end dashboard_balance  */
+
+country codes .iti--allow-dropdown {
+    width: 100%;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+.table > :not(caption) > * > * {
+    border-bottom-width: 0 !important;
+}
+.iti__flag-container {
+    top: 0;
+    bottom: 0;
+    background-color: #f2f2f2 !important;
+}
+.iti--allow-dropdown .iti__flag-container,
+.iti--separate-dial-code .iti__flag-container {
+    left: 0;
+}
+.mx-auto .iti__country-list {
+    background-color: #16222b;
+}
+.public_package_sending_cart .sending_credit_to .iti__country-list {
+    background-color: #ffffff;
+}
+
+.selectize-input input::placeholder,
+#search-input::placeholder {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.selectize-control.bg-dark {
+    background: none !important;
+}
+
+.selectize-input input {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.selectize-input {
+    border: 1px solid #687780;
+    background: transparent;
+}
+.selectize-input {
+    padding: 8px;
+    border: 1px solid #687780 !important;
+}
+.selectize-input .item {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+ }
+/* Style for devices with screen width greater than or equal to 2560px */
+@media (min-width: 320px) {
+    #phone {
+        font-size: 14px;
+    }
+    input#phone.form-control.iti__flag_input::placeholder {
+        font-size: 16px;
+    }
+    #phone::placeholder {
+        color: #232323;
+    }
+    .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+        margin-left: 6px;
+        font-size: 19px;
+        color: #232323;
+    }
+    .iti__arrow {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 7px solid #232323;
+    }
+    .multisp_form {
+        border: 1px solid #999999;
+        background: #00000036;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 375px) {
+    .iti__arrow {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 7px solid #232323;
+    }
+    #phone {
+        font-size: 11px;
+        font-weight: 900;
+    }
+    input#phone.form-control.iti__flag_input::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 425px) {
+    .iti__arrow {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 7px solid #232323;
+    }
+    #phone {
+        height: 3rem;
+        font-size: 20px;
+    }
+
+    input#phone.form-control.iti__flag_input::placeholder {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .iti__arrow {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #232323;
+    }
+    #phone {
+        height: 3rem;
+        font-size: 24px;
+    }
+    input#phone.form-control.iti__flag_input::placeholder {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .iti__arrow {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 7px solid #232323;
+    }
+    #phone {
+        height: 4rem;
+        font-size: 30px;
+    }
+    input#phone.form-control.iti__flag_input::placeholder {
+        font-size: 40px;
+    }
+}
+/* end Style for devices with screen width greater than 768px and less than or equal to 1024px */
+
+.iti__flag_input {
+    letter-spacing: 5px;
+}
+
+/* Thin, red scroll bar */
+.iti__country-list {
+    overflow-y: auto;
+    z-index: 10;
+}
+
+/* Thin, scroll bar */
+.iti__country-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.iti__country-list::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.iti__country-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.iti__country-list::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+}
+
+#phone::placeholder {
+    color: #d0d1d1;
+}
+
+#phone {
+    caret-color: #232323; /* Change the color of the cursor to blue */
+    color: #232323;
+    text-align: center;
+}
+
+/* increasing and deacreasing arrows color */
+
+.iti--separate-dial-code .iti__selected-flag {
+    border-radius: 5px;
+}
+.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+    color: #232323;
+}
+/* multi steps form */
+
+/* Style for form steps */
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.multisp_form {
+    border: 1px solid #999999;
+    background: #00000036;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* confirmation list */
+/* pulic page cards stuyle  */
+.pink.darken-4 {
+    border-radius: 24px 24px 0px 0px;
+    padding: 2rem 10rem 12rem 2rem;
+    color: white;
+}
+
+.pink.darken-4 {
+    background-color: #001273;
+}
+
+.pink.darken-44 {
+    background-color: #599eff;
+}
+
+.darken-4 h3 small {
+    color: white;
+}
+
+.carts_content small {
+    color: #004a59;
+}
+
+.carts_content small {
+    color: #004a59;
+}
+
+.special_part {
+    grid-template-rows: min-content auto;
+    align-items: flex-end;
+    padding: 2rem 10rem 2rem 2rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(185, 203, 211);
+    border-left: 1px solid rgb(185, 203, 211);
+    border-right: 1px solid rgb(185, 203, 211);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+/* pulic page cards stuyle  end*/
+.row-text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid rgb(112 140 144);
+    margin: 0 10px;
+    max-width: 10%;
+}
+
+.or-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(112 140 144);
+}
+
+/* public country flag styles  */
+.mx-auto {
+    margin-bottom: 10px;
+}
+.hTMjCv {
+    font: 18px / 32px BeatriceSemibold, Arial, sans-serif !important;
+    color: rgb(0, 74, 89) !important;
+    background: rgb(203, 242, 0) !important;
+}
+
+/* #phone {
+        height: 5rem;
+        font-weight: bold;
+        border-style: double;
+    } */
+
+/* .iti--allow-dropdown {
+    width: 100%;
+    background: #a6a6a6;
+    border-style: groove;
+    border-width: 1px;
+    border-color: #d1cfcf;
+    border-radius: 24px !important;
+    } */
+
+/* .iti--separate-dial-code .iti__selected-flag {
+    border-radius: 20px 0px 0px 20px !important;
+    } */
+
+.transac {
+    color: #3cd2a5;
+}
+.topup_path span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #969696;
+}
+.content_de span {
+    font-size: 12px;
+}
+
+.borderless-input {
+    border: none;
+    outline: none;
+    font-size: 4rem;
+}
+
+/* summary file  */
+.my-collapsed-datat {
+    background-color: transparent !important;
+    border-style: none !important;
+}
+
+.summary_main_content {
+    background-color: white;
+    border-radius: 24px;
+    padding: 2rem 2rem;
+}
+
+.summary_title {
+    color: rgb(0, 74, 89);
+    font-weight: 800;
+}
+
+.summary_title b {
+    color: #d900c7;
+}
+
+.promo_schedual {
+    text-align: center;
+}
+.public_page_containers {
+    background-color: #ccfff6;
+    padding-bottom: 5%;
+}
+.trust-poilot {
+    display: flex;
+    place-content: space-between;
+}
+.the_tastest_way {
+    background-color: rgb(125, 1, 85);
+    color: white;
+    border-radius: 30px 5px 5px 5px;
+}
+.package_price {
+    font-size: 2.7rem;
+    color: #004a59;
+}
+.summary_left_cont summary,
+.summary_left_cont span {
+    padding: 10px 0px 10px 0px;
+    font-size: large;
+    color: #004a59;
+}
+.summary_left_cont span {
+    font-size: 22px;
+}
+.summary_left_cont p {
+    color: #d900c7;
+}
+
+/* Print styles */
+@media print {
+    .list-group {
+        border-style: groove;
+        border-color: #010200;
+        border-width: 4px;
+    }
+
+    .transPage,
+    .multisp_form {
+        display: none;
+    }
+
+    .disabled-overlay,
+    .modal-title,
+    .card-arrow,
+    .tr_id,
+    .disabled-overlay,
+    .transa_actions,
+    .read-more-link,
+    .multistep-form .read-more-link {
+        display: none;
+    }
+
+    .transaction-details span,
+    .transaction-details b,
+    .transaction-details a,
+    .transaction-details .disabled,
+    .transaction-details .read_more a.list-group-item,
+    .transaction-details .test-one a.list-group-item,
+    .transaction-details transac,
+    .transaction-details b,
+    .transaction-details [transac] {
+        color: #010200;
+        font-size: 18px;
+    }
+
+    .dcontaint {
+        border-bottom: 2px solid #010200;
+        margin-bottom: 10px;
+        border-width: 1px;
+    }
+    .dcontaint {
+        text-align: center;
+    }
+}
+
+.selectize-control.single .selectize-input:after {
+    border-color: #687780 transparent transparent transparent;
+}
+
+.tawk-widget-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(60, 210, 165);
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+/* Menu width and toggle issue.  
+According to customer demand,
+in app.min.css file I chnaged margin-left:16.875rem to margin-left:10.875rem also width:16.875rem to width:11.875rem
+if anything distroyed I going to reverse 10 to 16 also 11 to 16
+*/
+#mycaret-flag img {
+    border-radius: 50px;
+    outline-color: #249d79; /* Set the outline color to a nice green */
+    outline-style: double; /* Use a double outline style for a unique look */
+    outline-width: 2px; /* Set the outline width to 2 pixels */
+    transition: all 0.3s ease-in-out; /* Add a smooth transition effect for hover */
+    transform: scale(1.05); /* Enlarge the image slightly on hover */
+    filter: brightness(1.2); /* Increase brightness for a hover effect */
+    outline-color: #249d79; /* Change the outline color on hover */
+}
+
+/* normal size of the custome country flags  */
+.my_custom_country_flag {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 7.5rem;
+}
+.my_caret_globe,
+.my_caret_down {
+    font-size: 2rem;
+}
+.position-absolute {
+    padding-left: 1.5rem;
+}
+
+/* Media query for laptops and smaller screens */
+@media (max-width: 10404px) {
+    .custom-amounticon {
+        font-size: 60px;
+    }
+    .custom-amount-tittle {
+        position: absolute;
+        font-size: 30px;
+        margin: 16px 0px 0px 9px;
+    }
+    .custom-input-content {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    .my_custom_country_flag {
+        font-size: 1.5rem;
+        padding: 1rem 1rem 1rem 7.5rem;
+    }
+    .my_caret_globe,
+    .my_caret_down {
+        font-size: 2rem;
+    }
+    .position-absolute {
+        padding-left: 1.5rem;
+    }
+
+    .custom-amounticon {
+        font-size: 40px;
+    }
+    .custom-amount-tittle {
+        position: absolute;
+        font-size: 19px;
+        margin: 11px px 0px 0px 9px;
+    }
+    .custom-input-content {
+        font-size: 17px;
+    }
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .my_custom_country_flag {
+        font-size: 1.5rem;
+        padding: 1rem 1rem 1rem 7.5rem;
+    }
+    .my_caret_globe,
+    .my_caret_down {
+        font-size: 2rem;
+    }
+    .position-absolute {
+        padding-left: 1.5rem;
+    }
+    #loading-text {
+        margin-top: 20px;
+    }
+
+    .custom-amounticon {
+        font-size: 40px;
+    }
+    .custom-amount-tittle {
+        position: absolute;
+        font-size: 17px;
+        margin: 10px 0px 0px 7px;
+    }
+    .custom-input-content {
+        font-size: 15px;
+    }
+}
+
+/* Media query for mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .my_custom_country_flag {
+        font-size: 1.2rem;
+        padding: 0.5rem 5rem 0.5rem 5.5rem;
+    }
+    .my_caret_globe,
+    .my_caret_down {
+        font-size: 1.5rem;
+    }
+    .position-absolute {
+        padding-left: 1rem;
+    }
+    #loading-text {
+        margin-top: 20px;
+    }
+    .loader_imgage {
+        border-radius: 250px;
+    }
+
+    .custom-amounticon {
+        font-size: 36px;
+    }
+    .custom-amount-tittle {
+        position: absolute;
+        font-size: 14px;
+        margin: 15px 0px 0px 8px;
+    }
+    .custom-input-content {
+        font-size: 15px;
+    }
+}
+
+/* Media query for screens with a width of 375px (e.g., iPhone 6/7/8) */
+@media (max-width: 375px) {
+    .my_custom_country_flag {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.4rem 0.4rem 4.9rem;
+    }
+    .my_caret_globe,
+    .my_caret_down {
+        font-size: 1.4rem;
+    }
+    .position-absolute {
+        padding-left: 1rem;
+    }
+    #loading-text {
+        margin-top: 22px;
+    }
+    .loader_imgage {
+        border-radius: 250px;
+    }
+
+    .custom-amounticon {
+        font-size: 36px;
+    }
+    .custom-amount-tittle {
+        position: absolute;
+        font-size: 12px;
+        margin: 13px 0px 0px 6px;
+    }
+    .custom-input-content {
+        font-size: 13px;
+    }
+}
+
+/* Media query for screens with a width of 320px (e.g., iPhone 5/SE) */
+@media (max-width: 320px) {
+    .my_custom_country_flag {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem 0.5rem 4.6rem;
+    }
+    .my_caret_globe,
+    .my_caret_down {
+        font-size: 1.2rem;
+    }
+    .position-absolute {
+        padding-left: 1rem;
+    }
+    #loading-text {
+        margin-top: 25px;
+    }
+
+    .loader_imgage {
+        border-radius: 250px;
+    }
+    .custom-amounticon {
+        font-size: 36px;
+    }
+    .custom-amount-tittle {
+        position: absolute;
+        font-size: 1 0px;
+        margin: 10px 0px 0px 8px;
+    }
+    .custom-input-content {
+        font-size: 10px;
+    }
+}
+
+/* -------------------------- flags scrollbars   */
+
+.country-list {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#country-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.country-flag {
+    width: 50px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.country-list::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    right: 0;
+    margin-top: -10;
+    border-radius: 5px;
+}
+
+.country-list::-webkit-scrollbar-track {
+    background-color: rgb(222, 222, 222);
+    border: 1px solid #4e525b;
+}
+
+.country-list::-webkit-scrollbar-thumb {
+    background-color: #045f44;
+    border-radius: 5px;
+}
+
+.country-list::-webkit-scrollbar-thumb:hover {
+    background-color: #249d79;
+}
+
+#country-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+#country-list li strong {
+    margin-right: 10px;
+}
+
+#country-list li span {
+    margin-right: 10px;
+}
+
+.country-flag {
+    width: 50px;
+    height: 30px;
+}
+
+#country-search {
+    color: #249d79;
+}
+
+/* -------------------------- flags scrollbars   */
+/* ----------------------------------------------------- country code style  */
+.search_countries_contact {
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(
+        to bottom,
+        rgba(var(--bs-inverse-rgb), 0.15) 0,
+        transparent 100%
+    );
+    flex: 1;
+}
+.adding_items {
+    padding: 1rem;
+}
+
+/* reseller's dashboard globle input  */
+.my_caret_globe {
+    animation-name: spin;
+    animation-duration: 7s; /* Total animation duration */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    50% {
+        transform: rotate(180deg); /* Rotate halfway (opposite direction) */
+    }
+    100% {
+        transform: rotate(
+            360deg
+        ); /* Complete the rotation (back to the original direction) */
+    }
+}
+/* reseller's dashboard globle input  */
+.hidden {
+    display: none;
+}
+#see-more-row td {
+    text-align: center;
+}
+
+.tooltip * {
+    background-color: #0d151f;
+    color: #fff;
+    line-height: 25px;
+    text-align: start;
+}
+
+.bi.bi-sliders.special-char::before {
+    line-height: 1.8 !important;
+}
+#country-list li {
+    cursor: pointer;
+}
+
+/* submiting dashboards loader  */
+#loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: radial-gradient(
+        circle,
+        rgb(255 255 255) 13%,
+        #249d79 13.3%,
+        rgb(0 12 26 / 84%) 100%
+    );
+    z-index: 9999;
+}
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.fast-animated-gradient {
+    position: absolute;
+    animation: color-shift 1s infinite alternate; /* Set a faster animation duration */
+    font-weight: 400;
+}
+
+@keyframes color-shift {
+    50% {
+        color: #b7b7b7; /* Red */
+    }
+    50% {
+        color: #249d79; /* Green */
+    }
+    100% {
+        color: #151515;
+    }
+}
+
+#loading-text {
+    position: absolute;
+}
+
+/* submiting dashboards loader  */
